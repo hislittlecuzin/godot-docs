@@ -68,6 +68,14 @@ The ragdoll is now ready to use. To start the simulation and play the ragdoll an
     func _ready():
         physical_bones_start_simulation()
 
+.. code-tab:: gdscript GDScript
+    [Export]
+    Skeleton3D skeleton; // Build then reference in Editor. 
+
+    public override void _Ready() {
+	    skeleton.PhysicalBonesStartSimulation();
+    }
+
 To stop the simulation, call the ``physical_bones_stop_simulation()`` method.
 
 .. image:: img/ragdoll_sim_stop.gif
